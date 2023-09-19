@@ -1,0 +1,14 @@
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.geral {
+    margin: 0;
+    padding: 0;
+}
+
