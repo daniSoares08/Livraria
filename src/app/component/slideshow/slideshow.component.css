@@ -1,2 +1,5 @@
 @import "~@coreui/coreui/dist/css/coreui.css";
 
+.slider {
+    max-height: 60%;
+}
