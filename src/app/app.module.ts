@@ -14,6 +14,7 @@ import { VitriniComponent } from './component/vitrini/vitrini.component';
 import { SlideshowComponent } from './component/slideshow/slideshow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from '@coreui/angular';
+import { CadastroLoginComponent } from './component/cadastro-login/cadastro-login.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CarouselModule } from '@coreui/angular';
     AppComponent,
     ToolbarComponent,
     VitriniComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    CadastroLoginComponent
   ],
   imports: [
     BrowserModule,
