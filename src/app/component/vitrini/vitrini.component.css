@@ -1,26 +1,35 @@
-
-
 * {
     font-family: Helvetica;
     margin: 0;
     padding: 0;
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+
+}
+
 .vitrini {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
     background-color: #f0f0f0;
+    max-width: 900px;
 }
 
 .container {
-    max-width: 350px;
+    width: 230px;
+    height: 380px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .book-card {
@@ -28,24 +37,32 @@
     border-radius: 5px;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
 }
 
 .book-image {
     max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 500px) {
-    .container {
-        max-width: 100%; /* Em telas menores, ocupará 100% da largura disponível */
-    }
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .book-image img {
     max-width: 100%;
-    min-width: 130px;
-    max-height: 240px;
-    height: auto;
+    height: 200px;
+    width: auto;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .book-image img {
+        height: auto;
+    }
 }
 
 .book-details {
@@ -54,34 +71,32 @@
 }
 
 .book-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.book-author {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.book-price {
-    font-size: 28px;
-    color: #e91e63;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .book-description {
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.4;
+    flex-grow: 1;
+    margin-bottom: 5px;
+}
+
+.book-price {
+    font-size: 18px;
+    color: #e91e63;
+    margin-bottom: 5px;
 }
 
 .buy-button {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 10px 20px;
-    background-color: #e91e63;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px 10px;
+    background-color: #0f13ff;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -89,6 +104,5 @@
 }
 
 .buy-button:hover {
-    background-color: #c2185b;
+    background-color: #15189e;
 }
-

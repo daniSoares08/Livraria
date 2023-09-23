@@ -15,6 +15,8 @@ import { SlideshowComponent } from './component/slideshow/slideshow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from '@coreui/angular';
 import { CadastroLoginComponent } from './component/cadastro-login/cadastro-login.component';
+import { RegisterComponent } from './component/pages/register/register.component';
+import { LoginComponent } from './component/pages/login/login.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { CadastroLoginComponent } from './component/cadastro-login/cadastro-logi
     ToolbarComponent,
     VitriniComponent,
     SlideshowComponent,
-    CadastroLoginComponent
+    CadastroLoginComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

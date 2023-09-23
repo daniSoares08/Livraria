@@ -2,6 +2,9 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+* {
+  background-color: #0f13ff;
+}
 
 .example-spacer {
     flex: 1 1 auto;
@@ -12,3 +15,8 @@
     padding: 0;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
