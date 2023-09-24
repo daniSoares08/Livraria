@@ -1,128 +1,28 @@
 
+
+<div class="promocoes">
+    <app-slideshow></app-slideshow>
+</div>
+
 <div class="home">
     <div class="vitrini">
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
+      <div class="container" *ngFor="let book of books">
+        <div class="book-card" routerLink="../pages/book-details/{{ book.id }}">
+          <div class="book-image">
+            <img [src]="book.image" alt="Capa do Livro">
+          </div>
+          <div class="book-details">
+            <div class="book-title">{{ book.title }}</div>
+            <div class="book-description">{{ book.description }}</div>
+          </div>
         </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        <div class="container">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="assets/IMgs/capaDeLivroTeste.jpg" alt="Capa do Livro">
-                </div>
-                <div class="book-details">
-                    <div class="book-title">Título do Livro</div>
-                    <div class="book-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel venenatis. Sed bibendum quam non augue cursus, non egestas mi
-                        dictum.
-                    </div>
-                </div>
-            </div>
-            <div class="book-price">R$ 29,99</div>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-        
+        <div class="book-price">R$ {{ book.price }}</div>
+        <button class="buy-button" routerLink="../pages/book-details/{{ book.id }}">Ver Detalhes</button>
+      </div>
     </div>
-</div>
+  </div>
+
+
 
 
 

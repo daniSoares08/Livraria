@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.promocoes {
+    justify-content: center;
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+}
+
 .home {
     display: flex;
     justify-content: center;
@@ -20,7 +27,7 @@
 
 .container {
     width: 230px;
-    height: 380px;
+    height: 320px;
     margin: 10px;
     padding: 10px;
     background-color: #fff;

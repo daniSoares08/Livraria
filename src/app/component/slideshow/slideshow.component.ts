@@ -17,21 +17,21 @@ export class SlideshowComponent implements OnInit {
   ngOnInit(): void {
     this.slides[0] = {
       id: 0,
-      src: 'assets/IMgs/angular.jpg',
-      title: 'First slide',
-      subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+      src: 'assets/IMgs/Promocao1.png',
+      title: '',
+      subtitle: ''
     };
     this.slides[1] = {
       id: 1,
-      src: 'assets/IMgs/react.jpg',
-      title: 'Second slide',
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      src: 'assets/IMgs/promocao2.png',
+      title: '',
+      subtitle: ''
     }
     this.slides[2] = {
       id: 2,
-      src: 'assets/IMgs/vue.jpg',
-      title: 'Third slide',
-      subtitle: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+      src: 'assets/IMgs/Promocao3.png',
+      title: '',
+      subtitle: ''
     }
   }
 }

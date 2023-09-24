@@ -1,0 +1,126 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.tudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.geral {
+  display: flex;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.fotos img {
+  max-width: 60%;
+  height: auto;
+}
+
+.compra {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.descricao-compra {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.preco-descricao h1 {
+  font-size: 20px;
+  color: #0f13ff;
+}
+
+.preco-descricao {
+  text-align: center;
+}
+
+.preco-descricao p {
+  font-size: 16px;
+  color: #666;
+}
+
+.formas-pag {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0f13ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #15189e;
+}
+
+@media (max-width: 768px) {
+  .book-details {
+    flex-direction: column;
+  }
+
+  .fotos {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+

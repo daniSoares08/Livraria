@@ -17,6 +17,7 @@ import { CarouselModule } from '@coreui/angular';
 import { CadastroLoginComponent } from './component/cadastro-login/cadastro-login.component';
 import { RegisterComponent } from './component/pages/register/register.component';
 import { LoginComponent } from './component/pages/login/login.component';
+import { BookDetailsComponent } from './component/pages/book-details/book-details.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LoginComponent } from './component/pages/login/login.component';
     SlideshowComponent,
     CadastroLoginComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,
