@@ -1,90 +1,108 @@
 
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
 
 .tudo {
+  height: 600px;
   max-width: 1200px;
-  margin: 0 auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 4% 2% 2%;
 }
 
 .book-details {
   display: flex;
   justify-content: space-between;
+  height: 600px;
+  
 }
 
 .geral {
   display: flex;
+  background-color: #fff;
 }
 
 .fotos {
   display: flex;
   justify-content: center;
   margin-right: 20px;
+  background-color: #fff;
+  width: 400px;
+  height: auto;
+  flex-direction: column;
+}
+
+.fotinhas{
+  display: flex;
+  background-color: #fff;
+  justify-content: space-around;
+  margin-top: 2%;
 }
 
 .fotos img {
-  max-width: 60%;
+  max-width: 400px;
   height: auto;
 }
 
 .compra {
-  flex: 1;
   width: 100%;
   min-height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #fff;
 }
 
 .descricao-compra {
-  
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .titulo {
-  text-align: center;
+  text-align: start;
 }
 
 .titulo h2 {
   font-size: 24px;
   margin: 0;
   color: #333;
+  background-color: #fff;
 }
 
 .preco-descricao h1 {
+
+  display: flex;
   font-size: 20px;
   color: #0f13ff;
+  background-color: #fff;
 }
 
 .preco-descricao {
-  text-align: center;
+  align-items: start;
+  background-color: #fff;
 }
 
 .preco-descricao p {
   font-size: 16px;
   color: #666;
+  background-color: #fff;
+  margin-top: 20px;
 }
 
 .formas-pag {
+  display: flex;
   margin-top: 20px;
   text-align: center;
+  background-color: #fff;
+  flex-direction: column;
 }
 
 label {
   font-size: 16px;
   color: #333;
+  background-color: #fff;
 }
 
 select {
@@ -94,6 +112,22 @@ select {
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 14px;
+  background-color: #fff;
+}
+
+select:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+.botoescompra {
+  display: flex;
+  background-color: #fff;
+}
+
+select {
+  width: 400px;
+  height: 30px;
 }
 
 button {
@@ -105,12 +139,14 @@ button {
   border: none;
   border-radius: 5px;
   font-size: 18px;
-  margin-top: 10px;
+  margin: 10px;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #15189e;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 @media (max-width: 768px) {
