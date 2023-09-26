@@ -18,6 +18,8 @@ import { CadastroLoginComponent } from './component/cadastro-login/cadastro-logi
 import { RegisterComponent } from './component/pages/register/register.component';
 import { LoginComponent } from './component/pages/login/login.component';
 import { BookDetailsComponent } from './component/pages/book-details/book-details.component';
+import { AddBookComponent } from './component/pages/add-book/add-book.component';
+import { EditBookComponent } from './component/pages/edit-book/edit-book.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { BookDetailsComponent } from './component/pages/book-details/book-detail
     CadastroLoginComponent,
     RegisterComponent,
     LoginComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
+    AddBookComponent,
+    EditBookComponent
   ],
   imports: [
     BrowserModule,

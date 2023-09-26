@@ -1,0 +1,86 @@
+
+<body>
+  <div class="geral">
+      <div class="imagem-formulario">
+          <img src="assets/IMgs/svglendo.svg" alt="">
+      </div>
+      <div class="formulario">
+          <form action="#">
+              <div class="cabecalho-formulario">
+                  <div class="titulo">
+                      <h1>Edite um livro</h1>
+                      <div id="divBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                      </div>
+                  </div>
+                  <div class="botao-login" style="display: none;">
+                      <button routerLink="../login">Login</button>
+                  </div>
+              </div>
+
+              <div class="input-group">
+                  <div class="input-box">
+                      <label for="primeironome">Título</label>
+                      <input type="text" name="primeironome" id="primeironome" placeholder="Digite o título do livro" required>
+                  </div>
+
+                  <div class="input-box">
+                      <label for="sobrenome">Editora</label>
+                      <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite a editora" required>
+                  </div>
+
+                  <div class="input-box">
+                      <label for="email">Gênero</label>
+                      <input type="email" name="email" id="email" placeholder="Digite o genero do livro" required>
+                  </div>
+
+                  <div class="input-box">
+                      <label for="celular">Valor de compra</label>
+                      <input type="text" name="celular" id="celular" placeholder="Valor de compra do livro" required>
+                  </div>
+
+                  <div class="input-box">
+                      <label for="senha">Valor de venda</label>
+                      <input type="text" name="senha" id="senha" placeholder="Valor de venda do livro" required>
+                  </div>
+
+                  <div class="input-box">
+                    <label>Imagens</label>
+                    <input type="file" name="imagens" class="import">
+                    <label for="confirm-senha" class="label">Arraste as imagens aqui</label>
+
+
+                  </div>
+              </div>
+              <div class="genero">
+                  <div class="genero-titulo">
+                      <h6>Classificação</h6>
+                  </div>
+
+                  <div class="genero-grupo">
+                      <div class="genero-input">
+                          <input type="radio" name="genero" id="Feminino">
+                          <label for="feminino">Novo</label>
+                      </div>
+
+                      <div class="genero-input">
+                          <input type="radio" name="genero" id="outros">
+                          <label for="outros">Seminovo</label>
+                      </div>
+
+                      <div class="genero-input">
+                          <input type="radio" name="genero" id="prefndizer">
+                          <label for="prefndizer">Usado</label>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="botao-continue">
+                  <button>Continuar</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</body>
+
+

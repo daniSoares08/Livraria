@@ -6,6 +6,16 @@
   background-color: #0f13ff;
 }
 
+span {
+  margin: 5px;
+  text-decoration: none;
+}
+
+span i:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .example-spacer {
     flex: 1 1 auto;
   }
